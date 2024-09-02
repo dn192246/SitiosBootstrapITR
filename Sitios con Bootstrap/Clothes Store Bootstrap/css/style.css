@@ -1,0 +1,41 @@
+.presentacion{
+    /*Imagen de fondo, oscurecida por un degradado simple*/
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("../img/mainImage.webp");
+
+    /*Porción de la imagen a mostrar*/
+    background-position: center;
+
+    /*Evitar que la imagen se repita*/
+    background-repeat: no-repeat;
+
+    /*Estirar la imagen para que abarque todo el espacio*/
+    background-size: cover;
+
+    /*Usar todo el ancho de la pantalla*/
+    width: 100%;
+
+    /*Altura mínima del DIV*/
+    min-height: 500px;
+
+    /*Alinear el texto al centro*/
+    text-align: center;
+
+    /*Activar Flexbox y alinear los elementos al centro*/
+    display: flex;
+    flex-direction: column; /*Mostrar elementos en vertical*/
+    justify-content: center;/*Alinear en eje principal (vertical)*/
+    align-items: center; /*Alinear en eje secundario (horizontal)*/
+}
+
+.presentacion h1, .presentacion h2{
+    color: white;
+}
+
+.presentacion h1{
+    font-size: 40px;
+}
+
+.presentacion h2{
+    font-size: 28px;
+}

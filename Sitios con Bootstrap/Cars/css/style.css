@@ -1,0 +1,40 @@
+.banner{
+    /*Declaramos el color de fondo con la imagen*/
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/bannerimg.jpg');
+    
+    /*Área de la imagen que se verá*/
+    background-position: center;
+
+    /*La imagen no debe repetirse*/
+    background-repeat: no-repeat;
+
+    /*Para que la imagen se amplíe en el espacio asignado*/
+    background-size:cover;
+    
+    /*Alineación del Texto*/
+    text-align:center;
+
+    /*Ancho del 100% de la pantalla*/
+    width: 100%;
+
+    /*Altura mínima, en caso de necesitar más, tomará más*/
+    min-height: 500px;
+
+    /*Activar y centrar todo con Flexbox*/
+    display: flex;
+    flex-direction: column; /*El eje principal pasa a ser el vertical*/
+    justify-content: center; /*En el eje principal (vertical)*/
+    align-items: center; /*En el eje secundario (horizontal)*/
+}
+
+.banner h1{
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
+
+.banner h2 {
+    font-weight: normal;
+    font-size: 25px;
+    color:white;
+}

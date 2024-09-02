@@ -1,0 +1,47 @@
+.hero{
+    /*Oscurecer la imagen con color negro*/
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/pizzaBanner.webp");
+
+    /*Porción de la imagen a mostrar*/
+    background-position: center;
+
+    /*Evitar que la imagen se repita para cubrir espacios*/
+    background-repeat: no-repeat;
+
+    /*La imagen cubrirá todo el espacio asignado*/
+    background-size: cover;
+
+    /*Alinear texto al centro*/
+    text-align: center;
+
+    /*Ancho del banner Hero. Abarca todo el ancho de la pantalla*/
+    width: 100%;
+
+    /*Altura mínima del banner*/
+    min-height: 500px;
+
+    /*Activar Flexbox y alinear los elementos al centro, verticalmente*/
+    display: flex;
+    flex-direction: column; /*El eje vertical pasa a ser principal*/
+    justify-content: center; /*Alineación en eje principal (vertical)*/
+    align-items: center; /*Alineación en el eje secundario (horizontal)*/
+}
+
+.hero h1, .hero h2, .hero h3{
+    color: white;
+}
+
+.hero h1{
+    font-size: 43px;
+    font-weight: bold;
+}
+
+.hero h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.hero h3{
+    font-size: 25px;
+    font-weight: lighter;
+}

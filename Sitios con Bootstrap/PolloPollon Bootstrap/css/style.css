@@ -1,0 +1,43 @@
+.banner{
+    /*Imagen de fondo, oscurecida*/
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("../img/banner.jpg");
+
+    /*Area de la imagen a mostrar*/
+    background-position: center;
+
+    /*Evitar que la imagen se repita*/
+    background-repeat: no-repeat;
+
+    /*Forzar la imagen a que tome el espacio completo*/
+    background-size: cover;
+
+    /*Altura mínima*/
+    min-height: 500px;
+
+    /*Ancho del banner*/
+    width: 100%;
+
+    /*Alinear el texto*/
+    text-align: center;
+
+    /*Activar Flexbox y alinear todo al centro*/
+    display: flex;
+    flex-direction: column;/*Convertimos el vertical en principal*/
+    justify-content: center;/*Para centrar eje principal (vertical)*/
+    align-items: center; /*Para centrar eje secundario (horizontal)*/
+}
+
+.banner h1, .banner h2 {
+    color: white;
+}
+
+.banner h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.banner h2{
+    font-size: 28px;
+    font-weight: lighter;
+}
